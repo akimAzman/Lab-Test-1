@@ -1,7 +1,17 @@
-stringS = input("Enter sentences : ")
+x = 5
+a = 2
+b = 3
 
-print("Original String is: "+stringS)
+def multiply_by_two(x):
+    return x*2
+    
+def add_numbers(a,b):
+    return a+b
+    
+augmented = {x:10,a:3,b:4}
 
-sent = len(stringS.split())
 
-print("The number of words in string is: " + str(sent))
+print ("Arguments: " +str(x))
+print ( multiply_by_two(5))
+print ("Arguments : "+str(a)+", "+str(b))
+print (add_numbers(2,3))
