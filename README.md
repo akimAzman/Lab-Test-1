@@ -1,24 +1,7 @@
-# Program to determine the most common letter in a string
+stringS = input("Enter sentences : ")
 
-import string
+print("Original String is: "+stringS)
 
-def find_max_letter_count(word):
+sent = len(stringS.split())
 
-    alphabet = string.ascii_lowercase
-    dictionary = {}
-
-    for letters in alphabet:
-        dictionary[letters] = 0
-
-    for letters in word:
-        dictionary[letters] += 1
-
-    dictionary = sorted(dictionary.items(), 
-                        reverse=True, 
-                        key=lambda x: x[1])
-
-    for position in range(0, 26):
-        print (dictionary[position])
-        if position != len(dictionary) - 1:
-            if dictionary[position + 1][1] < dictionary[position][1]:
-                break
+print("The number of words in string is: " + str(sent))
