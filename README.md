@@ -6,6 +6,6 @@ def  countSetBits(n):
     return count 
   
   
-# Program to find 1 in binary number in an Integer */ 
+# Program to find 1 in binary number in an Integer
 i = 9
 print(countSetBits(i)) 
